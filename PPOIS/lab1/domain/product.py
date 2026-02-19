@@ -11,7 +11,7 @@ class Product:
     PRODUCTION_STAGES: List[str] = ["dough", "baking", "cooling", "packaging"]
     
     def __init__(self, name: str) -> None:
-        self.product_id: str = f"P{Product._id_counter:03}"
+        self.product_id: str = f"{Product._id_counter:0}"
         self.name: str = name
         
         # Атрибуты по умолчанию не соответствуют стандартам
@@ -55,3 +55,4 @@ class Product:
             f"Certificates={len(self.certificates)}, "
             f"Attributes={self.attributes})"
         )
+
