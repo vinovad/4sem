@@ -1,13 +1,24 @@
 from typing import List, Dict, Tuple, Optional
 from .product import Product
-from .quality_standard import QualityStandard, GOSTStandard, BakeryEnterpriseStandard, OrganicBakeryStandard
+from .quality_standard import (
+    QualityStandard, 
+    GOSTStandard, 
+    BakeryEnterpriseStandard, 
+    OrganicBakeryStandard
+)
 from .certificate import Certificate
 from .review import Review
-from .production_stages import DoughStage, BakingStage, CoolingStage, PackagingStage
+from .production_stages import (
+    DoughStage,
+    BakingStage,
+    CoolingStage,
+    PackagingStage
+)
 from datetime import datetime
 
+
 class QualityController:
-    #Контроллер системы контроля качества
+    """Контроллер системы контроля качества"""
     
     def __init__(self) -> None:
         self.products: List[Product] = []
@@ -22,9 +33,9 @@ class QualityController:
             CoolingStage(),
             PackagingStage()
         ]
-    
+
     def get_standard(self, standard_name: str) -> QualityStandard:
-        #Получить стандарт по имени
+        """Получить стандарт по имени"""
         if standard_name == "ГОСТ СТ-1":
             return GOSTStandard()
         elif standard_name == "Собственный стандарт пекарни":
@@ -33,23 +44,23 @@ class QualityController:
             return OrganicBakeryStandard()
         else:
             raise ValueError(f"Неизвестный стандарт: {standard_name}")
-    
+
     def add_product(self, name: str) -> Product:
-        #Добавить продукт в систему
+        """Добавить продукт в систему"""
         product = Product(name)
         self.products.append(product)
         return product
-    
+
     def show_products(self) -> List[Tuple[str, str]]:
-        #Показать список продуктов
+        """Показать список продуктов"""
         return [(product.product_id, product.name) for product in self.products]
-    
+
     def get_product(self, product_id: str) -> Optional[Product]:
-        #Получить продукт по ID
+        """Получить продукт по ID"""
         return next((p for p in self.products if p.product_id == product_id), None)
-    
+
     def has_certificate_for_current_stage(self, product_id: str) -> bool:
-        #Проверить, есть ли действующий сертификат для текущего этапа продукта
+        """Проверить, есть ли действующий сертификат для текущего этапа продукта"""
         product = self.get_product(product_id)
         if not product:
             return False
@@ -59,9 +70,9 @@ class QualityController:
             if cert.stage == current_stage and cert.is_valid():
                 return True
         return False
-    
+
     def advance_stage(self, product_id: str) -> bool:
-        #Переводит продукт на следующий этап производства, если текущий этап пройден и сертифицирован
+        """Переводит продукт на следующий этап производства, если текущий этап пройден и сертифицирован"""
         product = self.get_product(product_id)
         if not product:
             return False
@@ -70,17 +81,17 @@ class QualityController:
             product.current_stage += 1
             return True
         return False
-    
+
     def is_production_complete(self, product_id: str) -> bool:
-        #Проверить, завершено ли производство
+        """Проверить, завершено ли производство"""
         product = self.get_product(product_id)
         if not product:
             return True  # Если продукт не найден, считаем производство завершенным
         
         return product.current_stage >= len(product.PRODUCTION_STAGES)
-    
+
     def add_quality_check(self, product_id: str, stage: str, result: dict) -> None:
-        #Добавляет запись о результате проверки качества
+        """Добавляет запись о результате проверки качества"""
         product = self.get_product(product_id)
         if not product:
             return
@@ -90,15 +101,15 @@ class QualityController:
             "result": result,
             "timestamp": datetime.now()
         })
-    
+
     def add_certificate(self, product_id: str, certificate: Certificate) -> None:
-        #Добавляет сертификат продукту
+        """Добавляет сертификат продукту"""
         product = self.get_product(product_id)
         if product:
             product.certificates.append(certificate)
-    
+
     def check_compliance(self, product_id: str, standard: QualityStandard) -> Tuple[bool, List[str]]:
-        #Проверить соответствие продукта стандарту качества
+        """Проверить соответствие продукта стандарту качества"""
         product = self.get_product(product_id)
         if not product:
             print(f"Продукт с ID {product_id} не найден.")
@@ -113,9 +124,9 @@ class QualityController:
                 failed_criteria.append(criterion)
         
         return len(failed_criteria) == 0, failed_criteria
-    
+
     def certify_product(self, product_id: str, standard: QualityStandard) -> bool:
-        #Выдать сертификат продукту
+        """Выдать сертификат продукту"""
         product = self.get_product(product_id)
         if not product:
             print(f"Продукт с ID {product_id} не найден.")
@@ -145,9 +156,9 @@ class QualityController:
         self.add_certificate(product_id, certificate)
         print(f"Сертификат успешно выдан для продукта {product_id} на этапе {current_stage}.")
         return True
-    
+
     def improve_product(self, product_id: str, standard: QualityStandard) -> List[str]:
-        #Внести улучшения в продукт для соответствия стандарту
+        """Внести улучшения в продукт для соответствия стандарту"""
         product = self.get_product(product_id)
         if not product:
             print(f"Продукт с ID {product_id} не найден.")
@@ -162,9 +173,9 @@ class QualityController:
                 print(f"  {criterion}: улучшено с '{old_value}' на '{new_value}'")
         
         return failed_criteria
-    
+
     def run_production(self, product_id: str) -> None:
-        #Запустить производство продукта через все этапы
+        """Запустить производство продукта через все этапы"""
         product = self.get_product(product_id)
         if not product:
             print(f"Продукт с ID {product_id} не найден.")
@@ -185,18 +196,18 @@ class QualityController:
                 print("Производство завершено успешно.")
         else:
             print(f"Необходимо пройти проверку и получить сертификат для этапа {current_stage}.")
-    
+
     def add_review(self, product_id: str, author: str, comment: str, rating: int) -> bool:
-        #Добавить отзыв к продукту
+        """Добавить отзыв к продукту"""
         product = self.get_product(product_id)
         if product:
             review = Review(product_id, author, comment, rating)
             product.add_review(review)
             return True
         return False
-    
+
     def analyze_reviews(self, product_id: str) -> Tuple[Optional[float], List[str]]:
-    
+        """Анализировать отзывы и рекомендовать улучшения"""
         product = self.get_product(product_id)
         if not product:
             return None, ["Продукт не найден"]
