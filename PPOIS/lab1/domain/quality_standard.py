@@ -1,7 +1,8 @@
 class QualityStandard:
     def __init__(self, standard_name: str, criteria: dict) -> None:
-        self.standard_name = standard_name
-        self.criteria = criteria  # Требуемые значения атрибутов
+        self.standard_name: str = standard_name
+        self.criteria: dict = criteria  # Требуемые значения атрибутов
+
 
 class GOSTStandard(QualityStandard):
     def __init__(self) -> None:
@@ -13,6 +14,7 @@ class GOSTStandard(QualityStandard):
         }
         super().__init__("ГОСТ СТ-1", criteria)
 
+
 class BakeryEnterpriseStandard(QualityStandard):
     def __init__(self) -> None:
         criteria = {
@@ -22,6 +24,7 @@ class BakeryEnterpriseStandard(QualityStandard):
             "taste": "excellent"
         }
         super().__init__("Собственный стандарт пекарни", criteria)
+
 
 class OrganicBakeryStandard(QualityStandard):
     def __init__(self) -> None:
