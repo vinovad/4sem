@@ -8,6 +8,7 @@ from domain import (
 )
 from datetime import datetime
 
+
 def main():
     controller = QualityController()
     
@@ -219,6 +220,7 @@ def main():
             
         else:
             print("\nНеверный выбор. Пожалуйста, попробуйте снова.")
+
 
 if __name__ == "__main__":
     main()
