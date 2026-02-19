@@ -1,30 +1,32 @@
-from typing import  TYPE_CHECKING
+from datetime import date, datetime
+from typing import Dict, List, TYPE_CHECKING
 
 if TYPE_CHECKING:
     from .review import Review
     from .certificate import Certificate
 
+
 class Product:
-    _id_counter = 1
-    PRODUCTION_STAGES = ["dough", "baking", "cooling", "packaging"]
+    _id_counter: int = 1
+    PRODUCTION_STAGES: List[str] = ["dough", "baking", "cooling", "packaging"]
     
     def __init__(self, name: str) -> None:
-        self.product_id = f"{Product._id_counter:0}"
-        self.name = name
+        self.product_id: str = f"P{Product._id_counter:03}"
+        self.name: str = name
         
         # Атрибуты по умолчанию не соответствуют стандартам
-        self.attributes = {
+        self.attributes: Dict[str, str] = {
             "defects": "have",    # have, few, none
             "texture": "poor",     # poor, good, excellent
             "smell": "bad",        # bad, good, excellent
             "taste": "poor"        # poor, good, excellent
         }
         
-        self.quality_checks = []  # Результаты проверок
-        self.reviews = []         # Отзывы
-        self.certificates = []    # Сертификаты
-        self.status = "production"  # production, quality_check, approved, rejected
-        self.current_stage = 0  # Индекс текущего этапа производства
+        self.quality_checks: List[dict] = []  # Результаты проверок
+        self.reviews: List['Review'] = []     # Отзывы
+        self.certificates: List['Certificate'] = []  # Сертификаты
+        self.status: str = "production"  # production, quality_check, approved, rejected
+        self.current_stage: int = 0  # Индекс текущего этапа производства
         
         Product._id_counter += 1
     
@@ -47,7 +49,9 @@ class Product:
     
     def __str__(self) -> str:
         """Строковое представление продукта"""
-        return (f"Product(ID={self.product_id}, Name={self.name}, "
-                f"Status={self.status}, ProductionStage={self.get_current_stage()}, "
-                f"Certificates={len(self.certificates)}, "
-                f"Attributes={self.attributes})")
+        return (
+            f"Product(ID={self.product_id}, Name={self.name}, "
+            f"Status={self.status}, ProductionStage={self.get_current_stage()}, "
+            f"Certificates={len(self.certificates)}, "
+            f"Attributes={self.attributes})"
+        )
