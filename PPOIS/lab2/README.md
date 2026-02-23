@@ -351,9 +351,9 @@ lab2/
 - В таблице отображаются первые 10 записей
 - В пагинации показано: текущая страница 1, всего страниц 10, всего записей 100
 
-![](4sem/PPOIS/lab2/screenshots/1.1.png)
+![](4sem/PPOIS/lab2/screenshot/1.1.png)
 
-![](4sem/PPOIS/lab2/screenshots/1.2.png)
+![](4sem/PPOIS/lab2/screenshot/1.2.png)
 
 ---
 
@@ -375,11 +375,11 @@ lab2/
 - Таблица обновляется, новая запись отображается на текущей странице (или создается новая страница)
 - Общее количество записей увеличивается до 101
 
-![](4sem/PPOIS/lab2/screenshots/2.1.png)
+![](4sem/PPOIS/lab2/screenshot/2.1.png)
 
-![](4sem/PPOIS/lab2/screenshots/2.2.png)
+![](4sem/PPOIS/lab2/screenshot/2.2.png)
 
-![](4sem/PPOIS/lab2/screenshots/2.3.png)
+![](4sem/PPOIS/lab2/screenshot/2.3.png)
 
 ---
 
@@ -396,9 +396,9 @@ lab2/
 - В таблице результатов отображаются все питомцы с именем "Бруно" и датой рождения 10.04.2021
 - Если таких записей нет, появляется сообщение "Записи не найдены"
 
-![](4sem/PPOIS/lab2/screenshots/3.1.png)
+![](4sem/PPOIS/lab2/screenshot/3.1.png)
 
-![](4sem/PPOIS/lab2/screenshots/3.2.png)
+![](4sem/PPOIS/lab2/screenshot/3.2.png)
 
 ---
 
@@ -414,7 +414,7 @@ lab2/
 - В таблице отображаются все питомцы, в диагнозе которых встречается слово "отит" (регистронезависимо)
 - Например, запись "Шарик" с диагнозом "Отит, назначены капли" будет найдена
 
-![](4sem/PPOIS/lab2/screenshots/4.1.png)
+![](4sem/PPOIS/lab2/screenshot/4.1.png)
 
 ---
 
@@ -435,13 +435,13 @@ lab2/
 - Таблица результатов обновляется (записи исчезают)
 - Главное окно обновляется, удаленные записи больше не отображаются
 
-![](4sem/PPOIS/lab2/screenshots/5.1.png)
+![](4sem/PPOIS/lab2/screenshot/5.1.png)
 
-![](4sem/PPOIS/lab2/screenshots/5.2.png)
+![](4sem/PPOIS/lab2/screenshot/5.2.png)
 
-![](4sem/PPOIS/lab2/screenshots/5.3.png)
+![](4sem/PPOIS/lab2/screenshot/5.3.png)
 
-![](4sem/PPOIS/lab2/screenshots/5.4.png)
+![](4sem/PPOIS/lab2/screenshot/5.4.png)
 
 ---
 
@@ -456,7 +456,7 @@ lab2/
 - Появляется сообщение "Нет выбранных записей для удаления"
 - Удаления не происходит
 
-![](4sem/PPOIS/lab2/screenshots/6.1.png)
+![](4sem/PPOIS/lab2/screenshot/6.1.png)
 
 ---
 
@@ -471,7 +471,7 @@ lab2/
 - Появляется сообщение "Записи не найдены"
 - Таблица результатов остается пустой
 
-![](4sem/PPOIS/lab2/screenshots/7.1.png)
+![](4sem/PPOIS/lab2/screenshot/7.1.png)
 
 ---
 
@@ -486,11 +486,11 @@ lab2/
 - Появляется сообщение "Данные успешно сохранены"
 - В указанной папке создается XML-файл со всеми записями
 
-![](4sem/PPOIS/lab2/screenshots/8.1.png)
+![](4sem/PPOIS/lab2/screenshot/8.1.png)
 
-![](4sem/PPOIS/lab2/screenshots/8.2.png)
+![](4sem/PPOIS/lab2/screenshot/8.2.png)
 
-![](4sem/PPOIS/lab2/screenshots/8.3.png)
+![](4sem/PPOIS/lab2/screenshot/8.3.png)
 
 ---
 
@@ -506,9 +506,9 @@ lab2/
 - Таблица обновляется, отображая загруженные записи
 - Общее количество записей увеличивается на количество загруженных
 
-![](4sem/PPOIS/lab2/screenshots/9.1.png)
+![](4sem/PPOIS/lab2/screenshot/9.1.png)
 
-![](4sem/PPOIS/lab2/screenshots/9.2.png)
+![](4sem/PPOIS/lab2/screenshot/9.2.png)
 
 ---
 
@@ -528,15 +528,15 @@ lab2/
 - Появляется сообщение "Количество записей на странице изменено на 20"
 - Обновляется информация о количестве страниц
 
-![](4sem/PPOIS/lab2/screenshots/10.1.png)
+![](4sem/PPOIS/lab2/screenshot/10.1.png)
 
-![](4sem/PPOIS/lab2/screenshots/10.2.png)
+![](4sem/PPOIS/lab2/screenshot/10.2.png)
 
-![](4sem/PPOIS/lab2/screenshots/10.3.png)
+![](4sem/PPOIS/lab2/screenshot/10.3.png)
 
-![](4sem/PPOIS/lab2/screenshots/10.4.png)
+![](4sem/PPOIS/lab2/screenshot/10.4.png)
 
-![](4sem/PPOIS/lab2/screenshots/10.5.png)
+![](4sem/PPOIS/lab2/screenshot/10.5.png)
 
 ---
 
