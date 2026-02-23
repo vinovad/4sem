@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pets>
+  <pet>
+    <name>Алиса</name>
+    <birth_date>2025-07-18</birth_date>
+    <last_visit>2026-01-25</last_visit>
+    <vet_name>Соловьев Вячеслав Григорьевич</vet_name>
+    <diagnosis>Кожный клещ, требуется обработка противопаразитарным средством</diagnosis>
+  </pet>
+  <pet>
+    <name>Ава</name>
+    <birth_date>2022-07-27</birth_date>
+    <last_visit>2026-01-15</last_visit>
+    <vet_name>Егорова Светлана Михайловна</vet_name>
+    <diagnosis>Простуда, рекомендовано тепло и покой</diagnosis>
+  </pet>
+  <pet>
+    <name>Берта</name>
+    <birth_date>2020-02-01</birth_date>
+    <last_visit>2020-04-25</last_visit>
+    <vet_name>Васильев Виктор Владимирович</vet_name>
+    <diagnosis>Отравление, требуется промывание желудка и сорбенты</diagnosis>
+  </pet>
+  <pet>
+    <name>Бианка</name>
+    <birth_date>2022-07-22</birth_date>
+    <last_visit>2023-01-31</last_visit>
+    <vet_name>Павлов Валентин Иванович</vet_name>
+    <diagnosis>Облысение, требуется витаминотерапия</diagnosis>
+  </pet>
+  <pet>
+    <name>Карма</name>
+    <birth_date>2022-07-24</birth_date>
+    <last_visit>2024-11-25</last_visit>
+    <vet_name>Попова Елена Ивановна</vet_name>
+    <diagnosis>Нарушение координации, требуется неврологическое обследование</diagnosis>
+  </pet>
+  <pet>
+    <name>Ленни</name>
+    <birth_date>2014-04-20</birth_date>
+    <last_visit>2016-07-07</last_visit>
+    <vet_name>Соколов Михаил Петрович</vet_name>
+    <diagnosis>Дерматит, требуется местное лечение</diagnosis>
+  </pet>
+  <pet>
+    <name>Ариэль</name>
+    <birth_date>2021-11-30</birth_date>
+    <last_visit>2022-04-17</last_visit>
+    <vet_name>Семенова Наталья Алексеевна</vet_name>
+    <diagnosis>Гипертиреоз, требуется медикаментозная коррекция</diagnosis>
+  </pet>
+  <pet>
+    <name>Мартина</name>
+    <birth_date>2020-10-08</birth_date>
+    <last_visit>2023-02-16</last_visit>
+    <vet_name>Сорокин Константин Николаевич</vet_name>
+    <diagnosis>Простуда, рекомендовано тепло и покой</diagnosis>
+  </pet>
+  <pet>
+    <name>Марта</name>
+    <birth_date>2025-10-20</birth_date>
+    <last_visit>2025-10-24</last_visit>
+    <vet_name>Алексеев Владимир Дмитриевич</vet_name>
+    <diagnosis>Диабет, требуется инсулинотерапия и контроль питания</diagnosis>
+  </pet>
+  <pet>
+    <name>Майя</name>
+    <birth_date>2016-10-15</birth_date>
+    <last_visit>2019-06-08</last_visit>
+    <vet_name>Филиппов Валерий Петрович</vet_name>
+    <diagnosis>Гепатит, требуется комплексное лечение</diagnosis>
+  </pet>
+  <pet>
+    <name>Ева</name>
+    <birth_date>2024-12-26</birth_date>
+    <last_visit>2026-02-08</last_visit>
+    <vet_name>Волков Андрей Сергеевич</vet_name>
+    <diagnosis>Обезвоживание, требуется восполнение жидкости</diagnosis>
+  </pet>
+  <pet>
+    <name>Милка</name>
+    <birth_date>2025-11-02</birth_date>
+    <last_visit>2025-11-07</last_visit>
+    <vet_name>Алексеев Владимир Дмитриевич</vet_name>
+    <diagnosis>Гастроэнтерит, требуется диета и медикаменты</diagnosis>
+  </pet>
+  <pet>
+    <name>Маркиза</name>
+    <birth_date>2017-04-05</birth_date>
+    <last_visit>2022-01-11</last_visit>
+    <vet_name>Филиппов Валерий Петрович</vet_name>
+    <diagnosis>Диабет, требуется инсулинотерапия и контроль питания</diagnosis>
+  </pet>
+  <pet>
+    <name>Муля</name>
+    <birth_date>2021-02-10</birth_date>
+    <last_visit>2021-02-26</last_visit>
+    <vet_name>Попова Елена Ивановна</vet_name>
+    <diagnosis>Диабет, требуется инсулинотерапия и контроль питания</diagnosis>
+  </pet>
+  <pet>
+    <name>Мия</name>
+    <birth_date>2015-01-12</birth_date>
+    <last_visit>2015-03-21</last_visit>
+    <vet_name>Егорова Светлана Михайловна</vet_name>
+    <diagnosis>Повреждение связок, требуется физиотерапия</diagnosis>
+  </pet>
+  <pet>
+    <name>Дора</name>
+    <birth_date>2019-03-06</birth_date>
+    <last_visit>2022-04-06</last_visit>
+    <vet_name>Попова Елена Ивановна</vet_name>
+    <diagnosis>Гипогликемия, требуется коррекция питания</diagnosis>
+  </pet>
+  <pet>
+    <name>Прада</name>
+    <birth_date>2019-09-28</birth_date>
+    <last_visit>2023-01-09</last_visit>
+    <vet_name>Комаров Иван Иванович</vet_name>
+    <diagnosis>Паразиты, требуется дегельминтизация</diagnosis>
+  </pet>
+  <pet>
+    <name>Парди</name>
+    <birth_date>2023-05-17</birth_date>
+    <last_visit>2024-05-30</last_visit>
+    <vet_name>Петрова Мария Дмитриевна</vet_name>
+    <diagnosis>Пневмония, требуется антибиотикотерапия</diagnosis>
+  </pet>
+  <pet>
+    <name>Ромашка</name>
+    <birth_date>2011-10-25</birth_date>
+    <last_visit>2015-06-14</last_visit>
+    <vet_name>Егорова Светлана Михайловна</vet_name>
+    <diagnosis>Стоматит, требуется лечение антисептиками</diagnosis>
+  </pet>
+  <pet>
+    <name>Пенелопа</name>
+    <birth_date>2025-02-11</birth_date>
+    <last_visit>2026-01-17</last_visit>
+    <vet_name>Яковлев Геннадий Степанович</vet_name>
+    <diagnosis>Конъюнктивит, требуется глазные капли</diagnosis>
+  </pet>
+  <pet>
+    <name>Салли</name>
+    <birth_date>2020-10-08</birth_date>
+    <last_visit>2024-08-08</last_visit>
+    <vet_name>Новиков Артем Викторович</vet_name>
+    <diagnosis>Заболевание суставов, требуется лечебная гимнастика</diagnosis>
+  </pet>
+  <pet>
+    <name>Салти</name>
+    <birth_date>2012-07-31</birth_date>
+    <last_visit>2012-10-31</last_visit>
+    <vet_name>Алексеев Владимир Дмитриевич</vet_name>
+    <diagnosis>Пиометра, требуется срочная операция</diagnosis>
+  </pet>
+  <pet>
+    <name>Оливия</name>
+    <birth_date>2025-11-26</birth_date>
+    <last_visit>2026-01-03</last_visit>
+    <vet_name>Козлова Татьяна Владимировна</vet_name>
+    <diagnosis>Проблемы с зубами, требуется чистка</diagnosis>
+  </pet>
+  <pet>
+    <name>Николь</name>
+    <birth_date>2023-12-06</birth_date>
+    <last_visit>2024-05-28</last_visit>
+    <vet_name>Смирнова Анна Владимировна</vet_name>
+    <diagnosis>Диабет, требуется инсулинотерапия и контроль питания</diagnosis>
+  </pet>
+  <pet>
+    <name>Зена</name>
+    <birth_date>2021-08-26</birth_date>
+    <last_visit>2025-05-18</last_visit>
+    <vet_name>Сорокин Константин Николаевич</vet_name>
+    <diagnosis>Гипогликемия, требуется коррекция питания</diagnosis>
+  </pet>
+  <pet>
+    <name>Зара</name>
+    <birth_date>2017-01-18</birth_date>
+    <last_visit>2021-01-29</last_visit>
+    <vet_name>Алексеев Владимир Дмитриевич</vet_name>
+    <diagnosis>Проблемы со зрением, требуется консультация специалиста</diagnosis>
+  </pet>
+  <pet>
+    <name>Трикси</name>
+    <birth_date>2014-06-20</birth_date>
+    <last_visit>2017-11-10</last_visit>
+    <vet_name>Алексеев Владимир Дмитриевич</vet_name>
+    <diagnosis>Воспаление уха, требуется курс антибиотиков</diagnosis>
+  </pet>
+  <pet>
+    <name>Стелла</name>
+    <birth_date>2016-03-21</birth_date>
+    <last_visit>2016-10-28</last_visit>
+    <vet_name>Сорокин Константин Николаевич</vet_name>
+    <diagnosis>Проблемы со зрением, требуется консультация специалиста</diagnosis>
+  </pet>
+  <pet>
+    <name>Флора</name>
+    <birth_date>2012-12-04</birth_date>
+    <last_visit>2016-11-24</last_visit>
+    <vet_name>Филиппов Валерий Петрович</vet_name>
+    <diagnosis>Паразиты, требуется дегельминтизация</diagnosis>
+  </pet>
+  <pet>
+    <name>Фиона</name>
+    <birth_date>2021-01-11</birth_date>
+    <last_visit>2024-08-09</last_visit>
+    <vet_name>Смирнова Анна Владимировна</vet_name>
+    <diagnosis>Сердечная недостаточность, требуется постоянный контроль</diagnosis>
+  </pet>
+  <pet>
+    <name>Фаня</name>
+    <birth_date>2019-05-16</birth_date>
+    <last_visit>2022-12-29</last_visit>
+    <vet_name>Комаров Иван Иванович</vet_name>
+    <diagnosis>Анемия, требуется коррекция питания и препараты железа</diagnosis>
+  </pet>
+  <pet>
+    <name>Лейла</name>
+    <birth_date>2011-04-13</birth_date>
+    <last_visit>2013-06-13</last_visit>
+    <vet_name>Попова Елена Ивановна</vet_name>
+    <diagnosis>Гастрит, требуется диета и медикаменты</diagnosis>
+  </pet>
+  <pet>
+    <name>Тутси</name>
+    <birth_date>2024-05-15</birth_date>
+    <last_visit>2025-09-21</last_visit>
+    <vet_name>Алексеев Владимир Дмитриевич</vet_name>
+    <diagnosis>Проблемы со зрением, требуется консультация специалиста</diagnosis>
+  </pet>
+  <pet>
+    <name>Симона</name>
+    <birth_date>2026-02-11</birth_date>
+    <last_visit>2026-02-11</last_visit>
+    <vet_name>Осипов Виктор Семенович</vet_name>
+    <diagnosis>Стоматит, требуется лечение антисептиками</diagnosis>
+  </pet>
+  <pet>
+    <name>Сайона</name>
+    <birth_date>2011-05-16</birth_date>
+    <last_visit>2014-11-04</last_visit>
+    <vet_name>Егорова Светлана Михайловна</vet_name>
+    <diagnosis>Повреждение связок, требуется физиотерапия</diagnosis>
+  </pet>
+  <pet>
+    <name>Сима</name>
+    <birth_date>2023-12-29</birth_date>
+    <last_visit>2025-01-15</last_visit>
+    <vet_name>Осипов Виктор Семенович</vet_name>
+    <diagnosis>Гипогликемия, требуется коррекция питания</diagnosis>
+  </pet>
+  <pet>
+    <name>Мара</name>
+    <birth_date>2020-03-07</birth_date>
+    <last_visit>2024-05-03</last_visit>
+    <vet_name>Лебедева Ольга Николаевна</vet_name>
+    <diagnosis>Анемия, требуется коррекция питания и препараты железа</diagnosis>
+  </pet>
+  <pet>
+    <name>Мона</name>
+    <birth_date>2021-10-11</birth_date>
+    <last_visit>2024-11-27</last_visit>
+    <vet_name>Жуков Виктор Семенович</vet_name>
+    <diagnosis>Стоматит, требуется лечение антисептиками</diagnosis>
+  </pet>
+  <pet>
+    <name>Тесса</name>
+    <birth_date>2016-06-18</birth_date>
+    <last_visit>2020-11-27</last_visit>
+    <vet_name>Лебедева Ольга Николаевна</vet_name>
+    <diagnosis>Сердечная недостаточность, требуется постоянный контроль</diagnosis>
+  </pet>
+  <pet>
+    <name>Смоки</name>
+    <birth_date>2024-12-05</birth_date>
+    <last_visit>2026-02-01</last_visit>
+    <vet_name>Морозов Сергей Андреевич</vet_name>
+    <diagnosis>Воспаление уха, требуется курс антибиотиков</diagnosis>
+  </pet>
+  <pet>
+    <name>Лиза</name>
+    <birth_date>2020-06-30</birth_date>
+    <last_visit>2024-07-15</last_visit>
+    <vet_name>Сорокин Константин Николаевич</vet_name>
+    <diagnosis>Пневмония, требуется антибиотикотерапия</diagnosis>
+  </pet>
+  <pet>
+    <name>Лада</name>
+    <birth_date>2016-04-29</birth_date>
+    <last_visit>2018-03-30</last_visit>
+    <vet_name>Смирнова Анна Владимировна</vet_name>
+    <diagnosis>Сердечная недостаточность, требуется постоянный контроль</diagnosis>
+  </pet>
+  <pet>
+    <name>Лана</name>
+    <birth_date>2018-04-07</birth_date>
+    <last_visit>2021-03-21</last_visit>
+    <vet_name>Наумов Виктор Анатольевич</vet_name>
+    <diagnosis>Травма от прыжка с высоты, требуется покой</diagnosis>
+  </pet>
+  <pet>
+    <name>Дана</name>
+    <birth_date>2020-06-15</birth_date>
+    <last_visit>2022-11-18</last_visit>
+    <vet_name>Новиков Артем Викторович</vet_name>
+    <diagnosis>Эпилепсия, требуется регулярный прием противосудорожных</diagnosis>
+  </pet>
+  <pet>
+    <name>Элли</name>
+    <birth_date>2025-12-23</birth_date>
+    <last_visit>2026-02-09</last_visit>
+    <vet_name>Волков Андрей Сергеевич</vet_name>
+    <diagnosis>Глазная инфекция, требуется капли</diagnosis>
+  </pet>
+  <pet>
+    <name>Лили</name>
+    <birth_date>2012-12-23</birth_date>
+    <last_visit>2014-12-24</last_visit>
+    <vet_name>Лебедева Ольга Николаевна</vet_name>
+    <diagnosis>Артрит, требуется физиотерапия и обезболивающие</diagnosis>
+  </pet>
+  <pet>
+    <name>Софи</name>
+    <birth_date>2017-01-13</birth_date>
+    <last_visit>2021-11-10</last_visit>
+    <vet_name>Васильев Виктор Владимирович</vet_name>
+    <diagnosis>Заболевание суставов, требуется лечебная гимнастика</diagnosis>
+  </pet>
+  <pet>
+    <name>Кики</name>
+    <birth_date>2015-07-03</birth_date>
+    <last_visit>2019-10-21</last_visit>
+    <vet_name>Павлов Валентин Иванович</vet_name>
+    <diagnosis>Перелом хвоста, требуется иммобилизация</diagnosis>
+  </pet>
+  <pet>
+    <name>Лотта</name>
+    <birth_date>2015-06-13</birth_date>
+    <last_visit>2019-07-29</last_visit>
+    <vet_name>Макаров Алексей Владимирович</vet_name>
+    <diagnosis>Травма от прыжка с высоты, требуется покой</diagnosis>
+  </pet>
+  <pet>
+    <name>Мэгги</name>
+    <birth_date>2023-03-10</birth_date>
+    <last_visit>2023-06-14</last_visit>
+    <vet_name>Петрова Мария Дмитриевна</vet_name>
+    <diagnosis>Перелом хвоста, требуется иммобилизация</diagnosis>
+  </pet>
+</pets>
