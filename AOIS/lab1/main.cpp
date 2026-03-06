@@ -52,47 +52,47 @@ static void printBcdNumber(const BCD5421::BCDNumber& bcdNumber) {
     }
 }
 
-// задание 1: представление чисел
+// Р·Р°РґР°РЅРёРµ 1: РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ С‡РёСЃРµР»
 
 static void showNumberRepresentations(int number) {
     Binary::BinaryRegister binaryReg;
 
     binaryReg.setSignMagnitude(number);
-    std::cout << "Прямой код:          ";
+    std::cout << "РџСЂСЏРјРѕР№ РєРѕРґ:          ";
     printBinaryRegister(binaryReg);
-    std::cout << "  проверка (10): " << binaryReg.signMagnitudeToDecimal() << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << binaryReg.signMagnitudeToDecimal() << "\n";
 
     binaryReg.setOnesComplement(number);
-    std::cout << "Обратный код:        ";
+    std::cout << "РћР±СЂР°С‚РЅС‹Р№ РєРѕРґ:        ";
     printBinaryRegister(binaryReg);
-    std::cout << "  проверка (10): " << binaryReg.onesComplementToDecimal() << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << binaryReg.onesComplementToDecimal() << "\n";
 
     binaryReg.setTwosComplement(number);
-    std::cout << "Дополнительный код:  ";
+    std::cout << "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Р№ РєРѕРґ:  ";
     printBinaryRegister(binaryReg);
-    std::cout << "  проверка (10): " << binaryReg.twosComplementToDecimal() << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << binaryReg.twosComplementToDecimal() << "\n";
 }
 
-// задание 2–5
+// Р·Р°РґР°РЅРёРµ 2вЂ“5
 
 static void showTwosComplementArithmetic(int firstNumber, int secondNumber) {
     Binary::BinaryRegister firstTwos, secondTwos;
     firstTwos.setTwosComplement(firstNumber);
     secondTwos.setTwosComplement(secondNumber);
 
-    std::cout << "\nСложение в дополнительном коде\n";
+    std::cout << "\nРЎР»РѕР¶РµРЅРёРµ РІ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРј РєРѕРґРµ\n";
     Binary::BinaryRegister addResult =
         Binary::BinaryOperations::addTwosComplement(firstTwos, secondTwos);
     std::cout << firstNumber << " + " << secondNumber << " = ";
     printBinaryRegister(addResult);
-    std::cout << "  проверка (10): " << addResult.twosComplementToDecimal() << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << addResult.twosComplementToDecimal() << "\n";
 
-    std::cout << "\nВычитание в дополнительном коде\n";
+    std::cout << "\nР’С‹С‡РёС‚Р°РЅРёРµ РІ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРј РєРѕРґРµ\n";
     Binary::BinaryRegister subResult =
         Binary::BinaryOperations::subtractTwosComplement(firstTwos, secondTwos);
     std::cout << firstNumber << " - " << secondNumber << " = ";
     printBinaryRegister(subResult);
-    std::cout << "  проверка (10): " << subResult.twosComplementToDecimal() << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << subResult.twosComplementToDecimal() << "\n";
 }
 
 static void showSignMagnitudeArithmetic(int firstNumber, int secondNumber) {
@@ -100,14 +100,14 @@ static void showSignMagnitudeArithmetic(int firstNumber, int secondNumber) {
     firstSign.setSignMagnitude(firstNumber);
     secondSign.setSignMagnitude(secondNumber);
 
-    std::cout << "\nУмножение в прямом коде\n";
+    std::cout << "\nРЈРјРЅРѕР¶РµРЅРёРµ РІ РїСЂСЏРјРѕРј РєРѕРґРµ\n";
     Binary::BinaryRegister mulResult =
         Binary::BinaryOperations::multiplySignMagnitude(firstSign, secondSign);
     std::cout << firstNumber << " * " << secondNumber << " = ";
     printBinaryRegister(mulResult);
-    std::cout << "  проверка (10): " << mulResult.signMagnitudeToDecimal() << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << mulResult.signMagnitudeToDecimal() << "\n";
 
-    std::cout << "\nДеление в прямом коде\n";
+    std::cout << "\nР”РµР»РµРЅРёРµ РІ РїСЂСЏРјРѕРј РєРѕРґРµ\n";
     Binary::BinaryRegister divResult =
         Binary::BinaryOperations::divideSignMagnitude(firstSign, secondSign);
     std::cout << firstNumber << " / " << secondNumber << " = ";
@@ -123,20 +123,20 @@ static void showSignMagnitudeArithmetic(int firstNumber, int secondNumber) {
     }
     double decimalResult = integerPart + fractionalPart / static_cast<double>(DIVISION_FRAC_DENOMINATOR);
     if (signBit) decimalResult = -decimalResult;
-    std::cout << "  проверка (10): " << decimalResult << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << decimalResult << "\n";
 }
 
-// задание 6: IEEE-754
+// Р·Р°РґР°РЅРёРµ 6: IEEE-754
 
 static void showIeeeRepresentation(float number, const FloatOps::FloatBits& floatBits) {
-    std::cout << "\nЧисло " << number << ":\n";
-    std::cout << "Битовое представление: ";
+    std::cout << "\nР§РёСЃР»Рѕ " << number << ":\n";
+    std::cout << "Р‘РёС‚РѕРІРѕРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ: ";
     printIeeeBits(floatBits);
-    std::cout << " (знак|порядок|мантисса)\n";
-    std::cout << "Знак: "      << floatBits.getSign()
-              << ", Порядок: " << floatBits.getExponent()
-              << ", Мантисса: " << floatBits.getMantissa() << "\n";
-    std::cout << "  проверка (10): " << FloatOps::bitsToFloat(floatBits) << "\n";
+    std::cout << " (Р·РЅР°Рє|РїРѕСЂСЏРґРѕРє|РјР°РЅС‚РёСЃСЃР°)\n";
+    std::cout << "Р—РЅР°Рє: "      << floatBits.getSign()
+              << ", РџРѕСЂСЏРґРѕРє: " << floatBits.getExponent()
+              << ", РњР°РЅС‚РёСЃСЃР°: " << floatBits.getMantissa() << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << FloatOps::bitsToFloat(floatBits) << "\n";
 }
 
 static void showIeeeOperation(const char* operationName,
@@ -145,10 +145,10 @@ static void showIeeeOperation(const char* operationName,
                                float secondOperand,
                                const FloatOps::FloatBits& operationResult) {
     float decimalResult = FloatOps::bitsToFloat(operationResult);
-    std::cout << "\n" << operationName << " в формате IEEE-754\n";
+    std::cout << "\n" << operationName << " РІ С„РѕСЂРјР°С‚Рµ IEEE-754\n";
     std::cout << firstOperand << " " << operationSymbol << " "
               << secondOperand << " = " << decimalResult << "\n";
-    std::cout << "Результат в двоичном: ";
+    std::cout << "Р РµР·СѓР»СЊС‚Р°С‚ РІ РґРІРѕРёС‡РЅРѕРј: ";
     printIeeeBits(operationResult);
     std::cout << "\n";
 }
@@ -157,48 +157,48 @@ static void showIeeeArithmetic(float firstNumber, float secondNumber) {
     FloatOps::FloatBits firstBits  = FloatOps::floatToBits(firstNumber);
     FloatOps::FloatBits secondBits = FloatOps::floatToBits(secondNumber);
 
-    std::cout << "\nПредставление в формате IEEE-754 (32 бита):\n";
+    std::cout << "\nРџСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ РІ С„РѕСЂРјР°С‚Рµ IEEE-754 (32 Р±РёС‚Р°):\n";
     showIeeeRepresentation(firstNumber,  firstBits);
     showIeeeRepresentation(secondNumber, secondBits);
 
-    showIeeeOperation("Сложение",  "+", firstNumber, secondNumber,
+    showIeeeOperation("РЎР»РѕР¶РµРЅРёРµ",  "+", firstNumber, secondNumber,
                       FloatOps::addFloat(firstBits, secondBits));
-    showIeeeOperation("Вычитание", "-", firstNumber, secondNumber,
+    showIeeeOperation("Р’С‹С‡РёС‚Р°РЅРёРµ", "-", firstNumber, secondNumber,
                       FloatOps::subFloat(firstBits, secondBits));
-    showIeeeOperation("Умножение", "*", firstNumber, secondNumber,
+    showIeeeOperation("РЈРјРЅРѕР¶РµРЅРёРµ", "*", firstNumber, secondNumber,
                       FloatOps::mulFloat(firstBits, secondBits));
-    showIeeeOperation("Деление",   "/", firstNumber, secondNumber,
+    showIeeeOperation("Р”РµР»РµРЅРёРµ",   "/", firstNumber, secondNumber,
                       FloatOps::divFloat(firstBits, secondBits));
 }
 
-// задание 7: BCD 5421
+// Р·Р°РґР°РЅРёРµ 7: BCD 5421
 
 static void showBcdRepresentation(int number) {
     BCD5421::BCDNumber bcdNumber = BCD5421::decimalToBCD5421(number);
-    std::cout << "\nЧисло " << number << ":\n";
-    std::cout << "Код 5421: ";
+    std::cout << "\nР§РёСЃР»Рѕ " << number << ":\n";
+    std::cout << "РљРѕРґ 5421: ";
     printBcdNumber(bcdNumber);
     std::cout << "\n";
-    std::cout << "  проверка (10): " << BCD5421::bcd5421ToDecimal(bcdNumber) << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << BCD5421::bcd5421ToDecimal(bcdNumber) << "\n";
 }
 
 static void showBcdArithmetic(int firstNumber, int secondNumber) {
     BCD5421::BCDNumber firstBcd  = BCD5421::decimalToBCD5421(firstNumber);
     BCD5421::BCDNumber secondBcd = BCD5421::decimalToBCD5421(secondNumber);
 
-    std::cout << "\nПредставление в коде 5421:\n";
+    std::cout << "\nРџСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ РІ РєРѕРґРµ 5421:\n";
     showBcdRepresentation(firstNumber);
     showBcdRepresentation(secondNumber);
 
     BCD5421::BCDNumber addResult = BCD5421::addBCD5421(firstBcd, secondBcd);
     int decimalSum = BCD5421::bcd5421ToDecimal(addResult);
 
-    std::cout << "\nСложение в коде 5421\n";
+    std::cout << "\nРЎР»РѕР¶РµРЅРёРµ РІ РєРѕРґРµ 5421\n";
     std::cout << firstNumber << " + " << secondNumber << " = " << decimalSum << "\n";
-    std::cout << "Результат в коде 5421: ";
+    std::cout << "Р РµР·СѓР»СЊС‚Р°С‚ РІ РєРѕРґРµ 5421: ";
     printBcdNumber(addResult);
     std::cout << "\n";
-    std::cout << "  проверка (10): " << decimalSum << "\n";
+    std::cout << "  РїСЂРѕРІРµСЂРєР° (10): " << decimalSum << "\n";
 }
 
 static int readInteger(const char* prompt) {
@@ -220,7 +220,7 @@ static int readNonNegativeInteger(const char* prompt) {
     std::cout << prompt;
     std::cin >> value;
     while (value < 0) {
-        std::cout << "Ошибка: введите неотрицательное число: ";
+        std::cout << "РћС€РёР±РєР°: РІРІРµРґРёС‚Рµ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ";
         std::cin >> value;
     }
     return value;
@@ -231,27 +231,27 @@ int main() {
     SetConsoleCP(1251);
     setlocale(LC_ALL, "Russian");
 
-    std::cout << "\n Задания 1-5 \n";
-    int firstInt  = readInteger("Введите первое число: ");
-    int secondInt = readInteger("Введите второе число: ");
+    std::cout << "\n Р—Р°РґР°РЅРёСЏ 1-5 \n";
+    int firstInt  = readInteger("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ: ");
+    int secondInt = readInteger("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: ");
 
-    std::cout << "\nПредставление чисел\n";
-    std::cout << "\nЧисло " << firstInt << ":\n";
+    std::cout << "\nРџСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ С‡РёСЃРµР»\n";
+    std::cout << "\nР§РёСЃР»Рѕ " << firstInt << ":\n";
     showNumberRepresentations(firstInt);
-    std::cout << "\nЧисло " << secondInt << ":\n";
+    std::cout << "\nР§РёСЃР»Рѕ " << secondInt << ":\n";
     showNumberRepresentations(secondInt);
 
     showTwosComplementArithmetic(firstInt, secondInt);
     showSignMagnitudeArithmetic(firstInt, secondInt);
 
-    std::cout << "\n Задание 6 \n";
-    float firstFloat  = readFloat("\nВведите первое вещественное число: ");
-    float secondFloat = readFloat("Введите второе вещественное число: ");
+    std::cout << "\n Р—Р°РґР°РЅРёРµ 6 \n";
+    float firstFloat  = readFloat("\nР’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ: ");
+    float secondFloat = readFloat("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ: ");
     showIeeeArithmetic(firstFloat, secondFloat);
 
-    std::cout << "\n Задание 7 \n";
-    int firstBcd  = readNonNegativeInteger("\nВведите первое число для кода 5421 (только неотрицательное): ");
-    int secondBcd = readNonNegativeInteger("Введите второе число для кода 5421 (только неотрицательное): ");
+    std::cout << "\n Р—Р°РґР°РЅРёРµ 7 \n";
+    int firstBcd  = readNonNegativeInteger("\nР’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ РґР»СЏ РєРѕРґР° 5421 (С‚РѕР»СЊРєРѕ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ): ");
+    int secondBcd = readNonNegativeInteger("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ РґР»СЏ РєРѕРґР° 5421 (С‚РѕР»СЊРєРѕ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ): ");
     showBcdArithmetic(firstBcd, secondBcd);
 
     return 0;
