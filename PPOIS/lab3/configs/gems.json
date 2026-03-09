@@ -1,0 +1,34 @@
+{
+  "gems": {
+    "red":    {"color": [220, 50,  50],  "name": "Рубин",    "type": "normal"},
+    "blue":   {"color": [50,  100, 220], "name": "Сапфир",   "type": "normal"},
+    "green":  {"color": [50,  200, 80],  "name": "Изумруд",  "type": "normal"},
+    "yellow": {"color": [230, 200, 30],  "name": "Топаз",    "type": "normal"},
+    "purple": {"color": [160, 50,  220], "name": "Аметист",  "type": "normal"},
+    "cyan":   {"color": [50,  210, 210], "name": "Аквамарин","type": "normal"},
+    "orange": {"color": [240, 130, 30],  "name": "Янтарь",   "type": "normal"}
+  },
+  "special_gems": {
+    "bomb": {
+      "color": [255, 80, 0],
+      "name": "Бомба",
+      "description": "Уничтожает все камни в радиусе 1 клетки вокруг",
+      "effect": "explode_radius",
+      "radius": 1
+    },
+    "lightning": {
+      "color": [255, 255, 0],
+      "name": "Молния",
+      "description": "Уничтожает всю строку и весь столбец",
+      "effect": "destroy_cross",
+      "radius": 0
+    },
+    "star": {
+      "color": [255, 215, 0],
+      "name": "Звезда",
+      "description": "Уничтожает все камни того же цвета на доске",
+      "effect": "destroy_color",
+      "radius": 0
+    }
+  }
+}
