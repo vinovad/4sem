@@ -374,7 +374,6 @@ class DeleteDialog(tk.Toplevel):
                 print(f"Ошибка при поиске для удаления: {e}")
                 continue
         
-        # *** ИСПРАВЛЕНО: Удаляем, даже если одна запись ***
         if pets_to_delete:
             count = len(pets_to_delete)
             if messagebox.askyesno("Подтверждение", f"Вы действительно хотите удалить {count} запис(ь/и)?"):
@@ -470,6 +469,7 @@ class DeleteDialog(tk.Toplevel):
             count = len(pets_to_delete)
             if messagebox.askyesno("Подтверждение", f"Вы действительно хотите удалить {count} запис(ь/и)?"):
                 self.controller.delete_pets(pets_to_delete)
-                self._search_by_diagnosis()  # Обновляем результаты
+                self._search_by_diagnosis()  
         else:
+
             messagebox.showerror("Ошибка", "Не удалось найти соответствующие записи в базе")
