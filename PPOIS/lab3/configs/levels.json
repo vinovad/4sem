@@ -1,0 +1,34 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "name": "Рубиновый сад",
+      "target_score": 1000,
+      "background_color": [20, 10, 40],
+      "board_theme": "ruby",
+      "available_gems": ["red", "blue", "green", "yellow", "purple"],
+      "special_gems_chance": 0.05,
+      "description": "Начальный уровень. Соберите 1000 очков."
+    },
+    {
+      "id": 2,
+      "name": "Изумрудные пещеры",
+      "target_score": 3000,
+      "background_color": [10, 30, 20],
+      "board_theme": "emerald",
+      "available_gems": ["red", "blue", "green", "yellow", "purple", "cyan"],
+      "special_gems_chance": 0.10,
+      "description": "Средний уровень. Соберите 3000 очков."
+    },
+    {
+      "id": 3,
+      "name": "Сапфировые высоты",
+      "target_score": 6000,
+      "background_color": [10, 10, 40],
+      "board_theme": "sapphire",
+      "available_gems": ["red", "blue", "green", "yellow", "purple", "cyan", "orange"],
+      "special_gems_chance": 0.15,
+      "description": "Финальный уровень. Соберите 6000 очков."
+    }
+  ]
+}

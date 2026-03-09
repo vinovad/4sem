@@ -1,0 +1,39 @@
+{
+  "window": {
+    "width": 800,
+    "height": 700,
+    "title": "Jewel Quest",
+    "fps": 60
+  },
+  "board": {
+    "rows": 8,
+    "cols": 8,
+    "cell_size": 70,
+    "offset_x": 80,
+    "offset_y": 80
+  },
+  "game_modes": {
+    "time_mode": {
+      "name": "На время",
+      "time_limit": 120,
+      "description": "Наберите как можно больше очков за 2 минуты"
+    },
+    "score_mode": {
+      "name": "На очки",
+      "target_scores": [1000, 3000, 6000],
+      "description": "Пройдите 3 уровня, набирая целевое количество очков"
+    }
+  },
+  "scoring": {
+    "match_3": 100,
+    "match_4": 250,
+    "match_5": 500,
+    "combo_multiplier": 1.5
+  },
+  "animation": {
+    "swap_speed": 8,
+    "fall_speed": 12,
+    "destroy_frames": 8,
+    "match_flash_duration": 300
+  }
+}
